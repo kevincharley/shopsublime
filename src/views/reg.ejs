@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>signup</title>
+    <!-- bootstrap4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container">
+                  
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                          <span class="sr-only">(current)</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+
+<form action="/register">
+<div class="card">
+<header class="card-header">
+	<a href="" class="float-right btn btn-outline-primary mt-1">Log in</a>
+	<h4 class="card-title mt-2">Sign up</h4>
+</header>
+<article class="card-body">
+<form>
+	<div class="form-row">
+		<div class="col form-group">
+			<label> name</label>
+		  	<input type="text" class="form-control" placeholder="ur name" name="name" >
+		</div> <!-- form-group end.// -->
+		<!-- form-group end.// -->
+	</div> <!-- form-row end.// -->
+	<div class="form-group">
+		<label>Email address</label>
+		<input type="email" class="form-control"input  placeholder="enter your email" name="email">
+		<small class="form-text text-muted">We'll never share your email with anyone else.</small>
+	</div> <!-- form-group end.// -->
+	<div class="form-group">
+            <label>phone no</label>
+            <input class="form-control" type="text" placeholder="enter your phone number" name="phonenumber" >
+            <div class="form-group">
+	<div class="form-group">
+		<label>Create password</label>
+        <input class="form-control" type="password"  name="password"  required></div>*should contain atleast 1 number and a special character>
+        <div class="form-group">
+                <label>repeat password</label>
+                <input class="form-control" name="pass2" type="password">
+    </div> <!-- form-group end.// -->  
+    <div><select name="role" class="form-control" style="margin-top: 40px">
+            <option value="">select type</option>
+            <option value="user">user</option>
+            <option value="admin">admin</option>
+          </select></div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-block"> Register  </button>
+                                            
+</form>
+</article> <!-- card-body end .// -->
+<div class="border-top card-body text-center">Have an account? <a href="">Log In</a></div>
+</div> <!-- card.// --></form>
+</body>
+</html>
